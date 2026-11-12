@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evolution of the akshara /ka/</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hd">
+  <div class="hd-l">
+    <h1>Evolution of the akshara <span class="ka" id="title-letter">/ka/</span></h1>
+    <p class="sub">Geometry extracted directly from the source transformation sheet</p>
+    <nav class="hd-let" id="letters" aria-label="Letter"></nav>
+  </div>
+  <nav class="hd-n" id="nav" aria-label="Script branch"></nav>
+</header>
+
+<main class="stage">
+  <div class="viewport" id="viewport">
+    <canvas id="gl"></canvas>
+    <svg class="ovl" id="ovl" aria-hidden="true"></svg>
+    <div class="stage-tag" id="stag"></div>
+    <div class="hint" id="hint">drag to rotate · scroll to zoom</div>
+  </div>
+
+</main>
+
+<footer class="tl">
+  <div class="tl-track">
+    <span class="tl-end" id="endA">BRAHMI</span>
+    <div class="tl-mid">
+      <label class="sr" for="scrub">Transformation frame</label>
+      <input id="scrub" type="range" min="0" max="7" step="0.001" value="0">
+      <div class="tl-dots" id="dots"></div>
+    </div>
+    <span class="tl-end tl-end-r" id="endB">GUJARATI</span>
+  </div>
+
+  <div class="tl-bar">
+    <div class="grp">
+      <button id="prev" type="button" title="Previous frame (←)">Prev</button>
+      <button id="play" type="button" class="pri" title="Play / pause (space)">Play</button>
+      <button id="next" type="button" title="Next frame (→)">Next</button>
+    </div>
+    <div class="grp" role="group" aria-label="Playback speed">
+      <button class="sp" data-s="0.5" type="button">0.5&times;</button>
+      <button class="sp on" data-s="1" type="button">1&times;</button>
+      <button class="sp" data-s="2" type="button">2&times;</button>
+    </div>
+    <div class="grp">
+      <button id="tgAnim" type="button">Morph</button>
+      <button id="tgRef" type="button" title="Overlay the original SVG outline">Reference outline</button>
+      <button id="tgGrid" type="button">Guides</button>
+      <button id="front" type="button">Front view</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <p class="cap" id="cap"></p>
+  </div>
+</footer>
+
+<div class="boot" id="boot">Loading geometry…</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
+
+</body></html>
