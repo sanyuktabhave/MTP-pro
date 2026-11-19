@@ -137,3 +137,14 @@ button { border-radius: 24px; }
 input[type=range] { accent-color: #333; }
 
 :root { --accent:#343434; --bg:#f5f4f2; }
+
+/* Keep all eight letters and script branches reachable on narrow screens. */
+.hd-l { min-width: 0; }
+.hd-let { flex-wrap: wrap; }
+@media (max-width: 1100px) {
+  .hd { flex-wrap: wrap; align-items: flex-start; gap: 12px; }
+  .hd-n { flex-wrap: wrap; }
+}
+@media (max-width: 620px) {
+  .hd-n button { padding: 8px; font-size: 9px; letter-spacing: .03em; }
+}

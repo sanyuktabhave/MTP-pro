@@ -1,6 +1,6 @@
 # Evolution of the akshara
 
-An interactive 3D exploration of seven letters: /ka/, /a/, /ca/, /ko/, /sa/, /ta/, and /na/. Includes Gujarati, Bengali, and Tamil transformation branches, chrome rendering, timeline scrubbing, and playback with milestone holds.
+An interactive 3D exploration of eight letters: /ka/, /a/, /ca/, /ko/, /sa/, /ta/, /na/, and /pa/. Includes Gujarati, Bengali, and Tamil transformation branches, chrome rendering, timeline scrubbing, and playback with milestone holds.
 
 ## Run locally
 
@@ -19,3 +19,5 @@ Open http://localhost:8765. Serve over HTTP so the browser can load the geometry
 - `vendor/`: bundled Three.js and OrbitControls.
 
 The Gujarati transitions remove the upper headline while retaining the letter's internal strokes. The /na/ sheet contains 22 milestones across its three branches.
+
+The /pa/ sheet contains 19 milestones: 7 toward Gujarati, 6 toward Bengali, and 6 toward Tamil. Its upper Devanagari headline retracts before the Gujarati form.

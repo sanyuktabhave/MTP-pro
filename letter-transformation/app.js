@@ -52,6 +52,8 @@ const DATA_TA = await loadJSON('glyphs-ta.json');
 const MORPH_TA = await loadJSON('morph-ta.json');
 const DATA_NA = await loadJSON('glyphs-na.json');
 const MORPH_NA = await loadJSON('morph-na.json');
+const DATA_PA = await loadJSON('glyphs-pa.json');
+const MORPH_PA = await loadJSON('morph-pa.json');
 
 /* Row 1 frames 4-7 are animated as a rotating shiro-rekha over a morphing
    letter body rather than as a whole-glyph morph. See tools/stemanim.py. */
@@ -444,6 +446,7 @@ if (DATA_KO) LETTERS.push({ id: 'ko', label: '/ko/', data: DATA_KO, morph: MORPH
 if (DATA_SA) LETTERS.push({ id: 'sa', label: '/sa/', data: DATA_SA, morph: MORPH_SA });
 if (DATA_TA) LETTERS.push({ id: 'ta', label: '/ta/', data: DATA_TA, morph: MORPH_TA });
 if (DATA_NA) LETTERS.push({ id: 'na', label: '/na/', data: DATA_NA, morph: MORPH_NA });
+if (DATA_PA) LETTERS.push({ id: 'pa', label: '/pa/', data: DATA_PA, morph: MORPH_PA });
 
 const ST = LETTERS.map((L) => L.data.rows.map(() => ({ t: 0 })));
 const SEQ = LETTERS.map((L) => L.data.rows.map(() => ({ stage: 0, from: null, p: 1, hold: 0 })));
